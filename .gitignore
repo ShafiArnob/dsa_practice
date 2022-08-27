@@ -1,0 +1,5 @@
+# Ignore files with extension `.class` & `.exe`
+*.exe
+
+# Ignore `bin` dir
+.vscode/
