@@ -1,3 +1,4 @@
+//1281. Subtract the Product and Sum of Digits of an Integer
 
 #include <iostream>
 using namespace std;
@@ -17,5 +18,5 @@ int main(){
         num/=10;
     }
 
-    cout<<prod<<" "<<sum<<endl;
+    return (prod-sum);
 }
