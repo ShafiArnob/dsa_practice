@@ -1,7 +1,7 @@
  #include <iostream>
 #include<math.h>
 using namespace std;
-//works for small number only
+
 int func(int n){
 
     for(int i=0;i<31;i++){
