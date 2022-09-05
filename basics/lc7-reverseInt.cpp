@@ -23,7 +23,5 @@ int reverse(int x){
 
 int main(){
     cout<<reverse(123)<<endl;
-    cout<<reverse(12311111111111111111111111)<<endl;
-
 }
 
