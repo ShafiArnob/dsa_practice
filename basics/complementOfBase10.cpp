@@ -1,7 +1,7 @@
  #include <iostream>
 #include<math.h>
 using namespace std;
-
+//works for small number only
 int func(int n){
     int dec_ans = 0, i=0, comp_ans=0;
     if(n==0){
