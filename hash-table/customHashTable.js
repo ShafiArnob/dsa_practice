@@ -47,9 +47,10 @@ class Hashtable{
   }
 }
 
-const hash = new Hashtable(50)
-hash.set("grapes", 1000)
-hash.set("apples", 54)
-hash.set("onions", 2)
-console.log(hash.keys())
-hash.display()
+module.exports = Hashtable
+// const hash = new Hashtable(50)
+// hash.set("grapes", 1000)
+// hash.set("apples", 54)
+// hash.set("onions", 2)
+// console.log(hash.keys())
+// hash.display()
