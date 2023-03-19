@@ -35,10 +35,21 @@ class Hashtable{
       }
     }
   }
+
+  keys(){
+    const keysArray = []
+    for(let i=0;i<this.data.length;i++){
+      if(this.data[i]){
+        keysArray.push(this.data[i][0][0])
+      }
+    }
+    return keysArray
+  }
 }
 
 const hash = new Hashtable(50)
 hash.set("grapes", 1000)
 hash.set("apples", 54)
-console.log(hash.get("apples"))
+hash.set("onions", 2)
+console.log(hash.keys())
 hash.display()
