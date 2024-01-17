@@ -1,4 +1,4 @@
-/*
+/*Q: Rectangle
  *Q
  ********
  ********
@@ -16,8 +16,7 @@ function basicRectangle(col, row) {
   return rect;
 }
 
-/*
- *Q: Hollow Rectangle
+/**Q: Hollow Rectangle
  **********
  *        *
  *        *
@@ -27,7 +26,6 @@ function basicRectangle(col, row) {
  *        *
  **********
  */
-
 function hollowRectangle(row, col) {
   let rect = "";
   for (let i = 0; i < row; i++) {
