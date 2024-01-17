@@ -1,17 +1,17 @@
-/* Q: Full Pyramid
+/* Q: Hollow Full Pyramid
 // prettier-ignore
                             *
-                         *  *  *
-                      *  *  *  *  *
-                   *  *  *  *  *  *  *
-                *  *  *  *  *  *  *  *  *
-             *  *  *  *  *  *  *  *  *  *  *
-          *  *  *  *  *  *  *  *  *  *  *  *  *
-       *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
-    *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
- *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *        
+                         *     *
+                      *           *
+                   *                 *
+                *                       *
+             *                             *
+          *                                   *
+       *                                         *
+    *                                               *
+ *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *              
  */
-function fullPyramid(n) {
+function hollowFullPyramid(n) {
   let pyramid = "";
   for (let row = 0; row < n; row++) {
     let k = 0;
@@ -19,7 +19,11 @@ function fullPyramid(n) {
       if (col < n - row - 1) {
         pyramid += "   ";
       } else if (k < 2 * row + 1) {
-        pyramid += " * ";
+        if (k == 0 || k == 2 * row || row == n - 1) {
+          pyramid += " * ";
+        } else {
+          pyramid += "   ";
+        }
         k++;
       } else {
         pyramid += "   ";
