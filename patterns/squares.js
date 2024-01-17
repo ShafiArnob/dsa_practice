@@ -9,4 +9,4 @@ function basicRectangle(col, row) {
   return rect;
 }
 
-console.log(basicRectangle(8, 4));
+console.log(basicRectangle(8));

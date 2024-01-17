@@ -1,3 +1,13 @@
+/* 
+Q: 
+*      
+**     
+***    
+****   
+*****  
+****** 
+*******
+*/
 function basicTriangle(level) {
   let triangle = "";
   for (let i = 0; i < level; i++) {
@@ -8,5 +18,3 @@ function basicTriangle(level) {
   }
   return triangle;
 }
-
-console.log(triangle(10));
